@@ -1,0 +1,44 @@
+﻿@model Anime
+
+<h1>Create</h1>
+<hr/>
+
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+
+            <div class="card-header">
+                <h5>Create a new Anime</h5>
+
+            </div>
+
+            <div class="card-body">
+
+                <form asp-controller="AnimeController1" asp-action="CreateAnime" method="post">
+                    <div class="mb-3">
+                        <label class="form-label">Anime Name </label>
+                        <input asp-for=Name type="text" class="form-control"/>
+
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Age Restriction: </label>
+                        <input asp-for=Age type="number" class="form-control"/>
+
+                    </div>
+
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}

@@ -1,0 +1,22 @@
+﻿@model List<Project1.Models.Anime>
+
+    <h1>
+        Anime List
+    </h1>
+
+
+    <p>This is the Index page for the Anime</p>
+
+    <ul class="list-group list-group-flush">
+    @foreach(var anime in Model)
+    {
+        <li class="list-group-item">
+            @anime.Name (@anime.Age)
+        </li>
+    }
+</ul>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
